@@ -1,7 +1,10 @@
 import React from "react";
 import "./ProductScreen.css";
+import Shoes from "./../shoes.json";
 
 function ProductScreen() {
+  console.log(Shoes);
+  console.log(Object.keys(Shoes));
   return (
     <div className="productscreen">
       <div className="productscreen_left">

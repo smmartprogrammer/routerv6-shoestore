@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomeScreen from "../Screens/HomeScreen";
-import ProductScreen from "../Screens/ProductScreen";
-import Navbar from "./Navbar";
-import CartScreen from "../Screens/CartScreen";
-import SideDrawer from "./SideDrawer";
-import Backdrop from "./Backdrop";
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomeScreen from '../Screens/HomeScreen';
+import ProductScreen from '../Screens/ProductScreen';
+import Navbar from './Navbar';
+import CartScreen from '../Screens/CartScreen';
+import SideDrawer from './SideDrawer';
+import Backdrop from './Backdrop';
 
 function RouteConfig() {
   const [sideToggle, setSideToggle] = useState(false);
