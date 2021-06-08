@@ -23,10 +23,6 @@ function RouteConfig() {
       <main>
         <Switch>
           <Route exact path="/" component={HomeScreen} />
-          <Route path="/launch" element={<Launch />}>
-            <Route path="/" element={<LaunchIndex />} />
-            <Route path=":slug" element={<LaunchShoe />} />
-          </Route>
           <Route path="*" element={<NotFound />} />
           <Route path="/product/:id" component={ProductScreen} />
           {/* <Route exact path="/Cart" component={CartScreen} /> */}
@@ -34,15 +30,6 @@ function RouteConfig() {
         </Switch>
       </main>
     </Router>
-  );
-}
-
-function Launch() {
-  return (
-    <div>
-      <h1> Launch </h1>
-      {/* <Outlet /> */}
-    </div>
   );
 }
 
